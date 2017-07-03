@@ -17,6 +17,6 @@ session = DBSession()
 # create an instance of the DBSession  object - to make a changeses
 # to the database, we can call a method within the session
 
-puppyNames = session.query(Puppy).all()
+puppyNames = session.query(Puppy.name).order_by(Puppy.name)
 for puppyName in puppyNames:
     print puppyName.name,
