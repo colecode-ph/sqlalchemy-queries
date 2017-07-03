@@ -1,6 +1,6 @@
 # This file will use SQLAlchemy to run queries on a sqlite database and print them
 
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker
 from puppydb_setup import Base, Shelter, Puppy
 
@@ -30,3 +30,12 @@ for puppyName in puppyNames:
     #print puppyName.weight
     print puppyName.name + " - " + str(puppyName.weight) + "lbs"
 print "\n"
+
+print "4. Query all puppies grouped by the shelter in which they are staying.\n"
+shelterCounts = (session.query(Shelter.name, func.count(Puppy.name).label("count"))
+                .join(Puppy, Shelter.id == Puppy.shelter_id)
+                .group_by(Shelter.name))
+for shelterName in shelterCounts:
+    print shelterName.name + " - " + str(shelterName.count)
+#print shelterCounts
+#print shelterCounts.name
