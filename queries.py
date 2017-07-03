@@ -24,8 +24,9 @@ for puppyName in puppyNames:
     print puppyName.name,
 print "\n"
 
-print "3. Query and print the name and weight of the ten heaviest puppies.\n"
+print "3. Query and print the name and weight of the ten heaviest puppies in descending order by weight.\n"
 puppyNames = session.query(Puppy.name, Puppy.weight).order_by(Puppy.weight.desc()).limit(10)
 for puppyName in puppyNames:
-    print puppyName.name + str(puppyName.weight),
+    #print puppyName.weight
+    print puppyName.name + " - " + str(puppyName.weight) + "lbs"
 print "\n"
