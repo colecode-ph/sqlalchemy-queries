@@ -17,6 +17,15 @@ session = DBSession()
 # create an instance of the DBSession  object - to make a changeses
 # to the database, we can call a method within the session
 
+print "1. Query all of the puppies and print the results in ascending alphabetical order.\n"
+
 puppyNames = session.query(Puppy.name).order_by(Puppy.name)
 for puppyName in puppyNames:
     print puppyName.name,
+print "\n"
+
+print "3. Query and print the name and weight of the ten heaviest puppies.\n"
+puppyNames = session.query(Puppy.name, Puppy.weight).order_by(Puppy.weight.desc()).limit(10)
+for puppyName in puppyNames:
+    print puppyName.name + str(puppyName.weight),
+print "\n"
