@@ -1,0 +1,62 @@
+$ python2 queries.py 
+1. Query all of the puppies and print the results in ascending alphabetical order.
+
+Abby Angel Annie Bailey Bailey Bandit Baxter Bear Beau Bella Belle Bentley Boomer Brandy Bruno Buddy Buster Casey Casey Charlie Chloe Coco Cody Cooper Daisy Dakota Dakota Dixie Duke Emma Ginger Gizmo Gracie Gus Harley Heidi Henry Holly Honey Hunter Jack Jackson Jake Jasmine Joey Katie Lady Lexi Lilly Lily Lola Louie Lucky Lucy Luke Lulu Luna Madison Maggie Max Maximus Mia Milo Missy Molly Murphy Oliver Oscar Penny Pepper Princess Riley Rocco Rocky Romeo Rosie Roxie Roxy Ruby Rudy Rusty Sadie Sam Samantha Sammy Samson Sandy Sasha Shadow Shelby Sophie Sparky Stella Teddy Toby Tucker Winston Zeus Zoe Zoey 
+
+2. Query all puppies (and birthdates) that are less than 6 months old organized by the youngest first.
+
+Gizmo - 2017-07-06
+Luna - 2017-07-04
+Joey - 2017-06-27
+Maximus - 2017-06-25
+Oscar - 2017-06-22
+Sammy - 2017-06-22
+Ruby - 2017-06-12
+Jackson - 2017-06-06
+Belle - 2017-05-11
+Louie - 2017-05-10
+Molly - 2017-05-10
+Lucy - 2017-04-28
+Ginger - 2017-04-15
+Sam - 2017-04-02
+Roxy - 2017-03-25
+Abby - 2017-03-23
+Milo - 2017-03-04
+Shadow - 2017-03-03
+Sasha - 2017-02-28
+Bruno - 2017-02-27
+Toby - 2017-02-23
+Cooper - 2017-02-17
+Max - 2017-02-12
+Annie - 2017-02-02
+Riley - 2017-01-31
+Henry - 2017-01-26
+Coco - 2017-01-22
+Romeo - 2017-01-12
+Duke - 2017-01-11
+Chloe - 2017-01-10
+Lilly - 2017-01-10
+
+
+3. Query the name and weight of the ten heaviest puppies in descending order by weight.
+
+Buddy - 40lbs
+Oscar - 40lbs
+Gizmo - 40lbs
+Mia - 40lbs
+Sam - 38lbs
+Bella - 38lbs
+Maggie - 38lbs
+Sophie - 38lbs
+Zoey - 38lbs
+Holly - 38lbs
+
+
+4. Query all puppies grouped by the shelter in which they are staying.
+
+Humane Society of Alameda - 25
+Oakland Animal Services - 16
+Palo Alto Humane Society - 20
+San Francisco SPCA Mission Adoption Center - 17
+Wonder Dog Rescue - 22
+
